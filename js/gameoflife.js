@@ -1,6 +1,18 @@
-function seed() {}
+// function seed(...args) {
+//   let arrArgs = args
+//   return arrArgs
+// }
 
-function same([x, y], [j, k]) {}
+function seed() {
+  let args = Array.from(arguments)
+  return args
+}
+
+function same([x, y], [j, k]) {
+
+
+  
+}
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {}
