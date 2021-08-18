@@ -9,9 +9,11 @@ function seed() {
 }
 
 function same([x, y], [j, k]) {
-
-
-  
+  if(x==j && y==k) {
+    return true
+  } else {
+    return false
+  }  
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
