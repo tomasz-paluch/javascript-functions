@@ -28,7 +28,16 @@ function contains(cell) {
   return result;
 }
 
-const printCell = (cell, state) => {};
+const printCell = (cell, state) => {
+  const boundState = contains.bind(state);
+  const isAlive = boundState(cell);
+
+  if (isAlive) {
+    return "\u25A3";
+  } else {
+    return "\u25A2";
+  }
+};
 
 const corners = (state = []) => {};
 
